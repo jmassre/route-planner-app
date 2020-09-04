@@ -13,6 +13,7 @@
 		D4A576FC24E2013500BCFD56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A576FA24E2013500BCFD56 /* Main.storyboard */; };
 		D4A576FE24E2013A00BCFD56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A576FD24E2013A00BCFD56 /* Assets.xcassets */; };
 		D4A5770124E2013A00BCFD56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A576FF24E2013A00BCFD56 /* LaunchScreen.storyboard */; };
+		D4A5770D24E4EFE200BCFD56 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5770C24E4EFE200BCFD56 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D4A576FD24E2013A00BCFD56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A5770024E2013A00BCFD56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4A5770224E2013A00BCFD56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4A5770C24E4EFE200BCFD56 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D4A576F424E2013500BCFD56 /* AppDelegate.swift */,
 				D4A576F624E2013500BCFD56 /* SceneDelegate.swift */,
 				D4A576F824E2013500BCFD56 /* ViewController.swift */,
+				D4A5770C24E4EFE200BCFD56 /* SecondViewController.swift */,
 				D4A576FA24E2013500BCFD56 /* Main.storyboard */,
 				D4A576FD24E2013A00BCFD56 /* Assets.xcassets */,
 				D4A576FF24E2013A00BCFD56 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A5770D24E4EFE200BCFD56 /* SecondViewController.swift in Sources */,
 				D4A576F924E2013500BCFD56 /* ViewController.swift in Sources */,
 				D4A576F524E2013500BCFD56 /* AppDelegate.swift in Sources */,
 				D4A576F724E2013500BCFD56 /* SceneDelegate.swift in Sources */,
@@ -290,7 +294,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nyu.edu.Route-Planner";
+				PRODUCT_BUNDLE_IDENTIFIER = "jmassre.Route-Planner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +311,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nyu.edu.Route-Planner";
+				PRODUCT_BUNDLE_IDENTIFIER = "jmassre.Route-Planner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
