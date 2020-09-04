@@ -1,6 +1,6 @@
 # route-planner-iOS
 
-Ever had multiple stops to hit to and wondered what the most efficient order may be? 
+Ever had multiple stops to hit and wondered what the most efficient order may be? 
 That's why I've created a mobile route planner - just enter your stops and it'll tell you the quickest order.
 
 
