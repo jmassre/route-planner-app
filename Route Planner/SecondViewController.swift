@@ -65,7 +65,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, MKMapViewDe
             for n in 0...self.allLocationsNoSpace.count-1{
        
                 
-                let url = URL(string: "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=\(self.allLocationsNoSpace[i])+&destinations=\(self.allLocationsNoSpace[n])&key=AIzaSyClZxuvOXNWqOjy5RPLpKKXvtdBOnELhWA")!
+                let url = URL(string: "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=\(self.allLocationsNoSpace[i])+&destinations=\(self.allLocationsNoSpace[n])&key=APIKEY")!
                 let request = URLRequest(url: url)
                 //get data from url request
                 let data = SecondViewController.requestSynchronousData(request: request)
