@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACE501ABDCB9DE85D9B5468F /* Pods_Route_Planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F35310B0B7677923C58624 /* Pods_Route_Planner.framework */; };
 		D4A576F524E2013500BCFD56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A576F424E2013500BCFD56 /* AppDelegate.swift */; };
 		D4A576F724E2013500BCFD56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A576F624E2013500BCFD56 /* SceneDelegate.swift */; };
 		D4A576F924E2013500BCFD56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A576F824E2013500BCFD56 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AF914CAB0014E2BAD0D6085 /* Pods-Route Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Route Planner.debug.xcconfig"; path = "Target Support Files/Pods-Route Planner/Pods-Route Planner.debug.xcconfig"; sourceTree = "<group>"; };
+		51F35310B0B7677923C58624 /* Pods_Route_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Route_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A576F124E2013500BCFD56 /* Route Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Route Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A576F424E2013500BCFD56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4A576F624E2013500BCFD56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		D4A5770024E2013A00BCFD56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4A5770224E2013A00BCFD56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4A5770C24E4EFE200BCFD56 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E6F5B71A1D16F8A60ED7622A /* Pods-Route Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Route Planner.release.xcconfig"; path = "Target Support Files/Pods-Route Planner/Pods-Route Planner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE501ABDCB9DE85D9B5468F /* Pods_Route_Planner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33B34CE6EF4B9BDE2F391E30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51F35310B0B7677923C58624 /* Pods_Route_Planner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DEFADE4D6FB22F3828411B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AF914CAB0014E2BAD0D6085 /* Pods-Route Planner.debug.xcconfig */,
+				E6F5B71A1D16F8A60ED7622A /* Pods-Route Planner.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D4A576E824E2013500BCFD56 = {
 			isa = PBXGroup;
 			children = (
 				D4A576F324E2013500BCFD56 /* Route Planner */,
 				D4A576F224E2013500BCFD56 /* Products */,
+				6DEFADE4D6FB22F3828411B3 /* Pods */,
+				33B34CE6EF4B9BDE2F391E30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4A5770524E2013A00BCFD56 /* Build configuration list for PBXNativeTarget "Route Planner" */;
 			buildPhases = (
+				9001D1A5D9734B7362B634DF /* [CP] Check Pods Manifest.lock */,
 				D4A576ED24E2013500BCFD56 /* Sources */,
 				D4A576EE24E2013500BCFD56 /* Frameworks */,
 				D4A576EF24E2013500BCFD56 /* Resources */,
+				DFA09C44CD5BD3ED27DFF00A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9001D1A5D9734B7362B634DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Route Planner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFA09C44CD5BD3ED27DFF00A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Route Planner/Pods-Route Planner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Route Planner/Pods-Route Planner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Route Planner/Pods-Route Planner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4A576ED24E2013500BCFD56 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		D4A5770624E2013A00BCFD56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF914CAB0014E2BAD0D6085 /* Pods-Route Planner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		D4A5770724E2013A00BCFD56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6F5B71A1D16F8A60ED7622A /* Pods-Route Planner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
