@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     @IBOutlet weak var viewTop: UIView! //full view
-    @IBOutlet weak var scrollView: UIScrollView! //scrollview
+    @IBOutlet weak var scrollView: TPKeyboardAvoidingScrollView! //scrollview
     @IBOutlet weak var addLocationButton: UIButton!
     @IBOutlet weak var removeLocationButton: UIButton!
     @IBOutlet weak var calculateRouteButton: UIButton!
