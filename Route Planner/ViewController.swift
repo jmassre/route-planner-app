@@ -67,7 +67,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupGesturesViewDelegate()
         //keep the round trip switch off
         roundTripSwitch.setOn(false, animated: true)
         
@@ -233,6 +233,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         else{
             endPointLabel.text = "Other Point:"
         }
+    }
+    
+    // Hide keyboard
+    func setupGesturesViewDelegate() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(userTapGesture))
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func userTapGesture(_ sender: UITapGestureRecognizer) {
+        // Hide keyboard
+        view.endEditing(true)
     }
     
     @IBAction func roundTripToggled(_ sender: UISwitch) {
